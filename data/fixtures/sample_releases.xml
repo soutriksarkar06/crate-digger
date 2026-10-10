@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SYNTHETIC fixture; see sample_masters.xml. -->
+<releases>
+  <release id="5001" status="Accepted">
+    <title>Sample Album One</title>
+    <genres><genre>Electronic</genre></genres>
+    <styles><style>Ambient</style></styles>
+    <country>UK</country>
+    <released>1997-05-12</released>
+    <master_id is_main_release="true">1001</master_id>
+    <tracklist>
+      <track><position>1</position><title>First</title><duration>4:10</duration></track>
+      <track><position>2</position><title>Second</title><duration>5:02</duration></track>
+    </tracklist>
+  </release>
+  <release id="5002" status="Accepted">
+    <title>Sample Album Two</title>
+    <genres><genre>Rock</genre></genres>
+    <country>US</country>
+    <master_id is_main_release="true">1002</master_id>
+    <tracklist>
+      <track><position>A1</position><title>Side A</title><duration>3:30</duration></track>
+      <track><position>B1</position><title>Side B</title><duration></duration></track>
+    </tracklist>
+  </release>
+  <release id="5003" status="Accepted">
+    <title>Sample Album Three (no tracklist)</title>
+    <genres><genre>Jazz</genre></genres>
+    <country>Japan</country>
+  </release>
+</releases>

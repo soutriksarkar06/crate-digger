@@ -1,0 +1,217 @@
+{
+  "source": "https://data.discogs.com/?download=data%2F2025%2Fdiscogs_20250101_masters.xml.gz",
+  "record_tag": "master",
+  "records": 5000,
+  "paths": [
+    {
+      "path": "/master",
+      "present_pct": 100.0,
+      "nonempty_pct": 0.0,
+      "examples": []
+    },
+    {
+      "path": "/master/artists",
+      "present_pct": 100.0,
+      "nonempty_pct": 0.0,
+      "examples": []
+    },
+    {
+      "path": "/master/artists/artist",
+      "present_pct": 100.0,
+      "nonempty_pct": 0.0,
+      "examples": []
+    },
+    {
+      "path": "/master/artists/artist/anv",
+      "present_pct": 9.5,
+      "nonempty_pct": 9.5,
+      "examples": [
+        "Mix Race",
+        "Mixrace Productions",
+        "Immersion"
+      ]
+    },
+    {
+      "path": "/master/artists/artist/id",
+      "present_pct": 100.0,
+      "nonempty_pct": 100.0,
+      "examples": [
+        "3225",
+        "233125",
+        "1162"
+      ]
+    },
+    {
+      "path": "/master/artists/artist/join",
+      "present_pct": 85.2,
+      "nonempty_pct": 85.2,
+      "examples": [
+        ",",
+        "&",
+        "/"
+      ]
+    },
+    {
+      "path": "/master/artists/artist/name",
+      "present_pct": 100.0,
+      "nonempty_pct": 100.0,
+      "examples": [
+        "Vince Watson",
+        "Soleil (2)",
+        "Blue Arsed Fly"
+      ]
+    },
+    {
+      "path": "/master/data_quality",
+      "present_pct": 100.0,
+      "nonempty_pct": 100.0,
+      "examples": [
+        "Correct",
+        "Needs Vote"
+      ]
+    },
+    {
+      "path": "/master/genres",
+      "present_pct": 100.0,
+      "nonempty_pct": 0.0,
+      "examples": []
+    },
+    {
+      "path": "/master/genres/genre",
+      "present_pct": 100.0,
+      "nonempty_pct": 100.0,
+      "examples": [
+        "Electronic",
+        "Rock",
+        "Folk, World, & Country"
+      ]
+    },
+    {
+      "path": "/master/main_release",
+      "present_pct": 100.0,
+      "nonempty_pct": 100.0,
+      "examples": [
+        "116925",
+        "42056",
+        "336873"
+      ]
+    },
+    {
+      "path": "/master/notes",
+      "present_pct": 12.7,
+      "nonempty_pct": 12.6,
+      "examples": [
+        "Experimental Drum & Bass",
+        "Co-musician [a429140]",
+        "First record by Juan Atkins and Richard Davis, recording und"
+      ]
+    },
+    {
+      "path": "/master/styles",
+      "present_pct": 99.3,
+      "nonempty_pct": 0.0,
+      "examples": []
+    },
+    {
+      "path": "/master/styles/style",
+      "present_pct": 99.3,
+      "nonempty_pct": 99.3,
+      "examples": [
+        "Techno",
+        "Deep House",
+        "IDM"
+      ]
+    },
+    {
+      "path": "/master/title",
+      "present_pct": 100.0,
+      "nonempty_pct": 100.0,
+      "examples": [
+        "Moments In Time",
+        "Biologique",
+        "Soleil"
+      ]
+    },
+    {
+      "path": "/master/videos",
+      "present_pct": 92.4,
+      "nonempty_pct": 0.0,
+      "examples": []
+    },
+    {
+      "path": "/master/videos/video",
+      "present_pct": 92.4,
+      "nonempty_pct": 0.0,
+      "examples": []
+    },
+    {
+      "path": "/master/videos/video/description",
+      "present_pct": 87.9,
+      "nonempty_pct": 87.4,
+      "examples": [
+        "Provided to YouTube by EPM Online\n\nBubbles \u00b7 Vince Watson\n\nA",
+        "Biologique,1999",
+        "Blue Arsed Fly \u200e\u2013 Knackered EP\nLabel: Tresor \u200e\u2013 Tresor 60\nFo"
+      ]
+    },
+    {
+      "path": "/master/videos/video/title",
+      "present_pct": 92.3,
+      "nonempty_pct": 92.3,
+      "examples": [
+        "Bubbles",
+        "Vince Watson : Bubbles",
+        "Blue Arsed Fly - Tired Ears (B1)"
+      ]
+    },
+    {
+      "path": "/master/videos/video@duration",
+      "present_pct": 92.4,
+      "nonempty_pct": 92.4,
+      "examples": [
+        "451",
+        "448",
+        "292"
+      ]
+    },
+    {
+      "path": "/master/videos/video@embed",
+      "present_pct": 92.4,
+      "nonempty_pct": 92.4,
+      "examples": [
+        "true"
+      ]
+    },
+    {
+      "path": "/master/videos/video@src",
+      "present_pct": 92.4,
+      "nonempty_pct": 92.4,
+      "examples": [
+        "https://www.youtube.com/watch?v=HxIAtSgCfJ4",
+        "https://www.youtube.com/watch?v=1ZW_Aw124dc",
+        "https://www.youtube.com/watch?v=6cjCI-cdz0Y"
+      ]
+    },
+    {
+      "path": "/master/year",
+      "present_pct": 100.0,
+      "nonempty_pct": 100.0,
+      "examples": [
+        "2002",
+        "1999",
+        "2004"
+      ]
+    },
+    {
+      "path": "/master@id",
+      "present_pct": 100.0,
+      "nonempty_pct": 100.0,
+      "examples": [
+        "113",
+        "114",
+        "115"
+      ]
+    }
+  ],
+  "durations": null
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SYNTHETIC fixture. Structure written from memory of the Discogs masters dump to test
+     the profiler; the real dump may differ, which is exactly what Phase 0 checks. -->
+<masters>
+  <master id="1001">
+    <main_release>5001</main_release>
+    <artists><artist><id>11</id><name>Example Artist A</name></artist></artists>
+    <genres><genre>Electronic</genre></genres>
+    <styles><style>Ambient</style><style>IDM</style></styles>
+    <year>1997</year>
+    <title>Sample Album One</title>
+    <data_quality>Correct</data_quality>
+  </master>
+  <master id="1002">
+    <main_release>5002</main_release>
+    <artists><artist><id>12</id><name>Example Artist B</name></artist></artists>
+    <genres><genre>Rock</genre></genres>
+    <year></year>
+    <title>Sample Album Two (no styles, empty year)</title>
+    <data_quality>Needs Vote</data_quality>
+  </master>
+  <master id="1003">
+    <main_release>5003</main_release>
+    <artists><artist><id>13</id><name>Example Artist C</name></artist></artists>
+    <genres><genre>Jazz</genre></genres>
+    <styles><style>Free Jazz</style></styles>
+    <year>1969</year>
+    <title>Sample Album Three</title>
+    <data_quality>Correct</data_quality>
+  </master>
+</masters>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SYNTHETIC but shaped like the REAL dump (copied from docs/profile_releases.json):
+     artists/artist(name,join), formats/format/descriptions, master_id@is_main_release,
+     tracklist/track(position,title,duration,sub_tracks). Eight cases, one per filter. -->
+<releases>
+  <!-- 1: passes. Two artists joined by "&", disambiguation "(2)", header row, credits -->
+  <release id="101" status="Accepted">
+    <artists>
+      <artist><id>1</id><name>Soleil (2)</name><join>&amp;</join></artist>
+      <artist><id>2</id><name>Blue Arsed Fly</name><join></join></artist>
+    </artists>
+    <title>Good Album</title>
+    <labels><label name="Tresor" catno="T60" id="5"/></labels>
+    <extraartists><artist><id>9</id><name>Some Producer (3)</name><role>Producer</role></artist></extraartists>
+    <formats><format name="Vinyl" qty="1"><descriptions><description>LP</description><description>Album</description></descriptions></format></formats>
+    <genres><genre>Electronic</genre><genre>Folk, World, &amp; Country</genre></genres>
+    <styles><style>Techno</style><style>IDM</style></styles>
+    <country>Germany</country>
+    <released>1999-03-00</released>
+    <master_id is_main_release="true">900</master_id>
+    <data_quality>Correct</data_quality>
+    <tracklist>
+      <track><position></position><title>Side A</title><duration></duration></track>
+      <track><position>A1</position><title>One</title><duration>4:45</duration></track>
+      <track><position>A2</position><title>Two</title><duration>5:08</duration></track>
+      <track><position>B1</position><title>Three</title><duration>1:02:10</duration></track>
+    </tracklist>
+    <videos><video src="https://www.youtube.com/watch?v=abc" duration="300" embed="true"><title>One</title></video></videos>
+  </release>
+  <!-- 2: single, not an album -->
+  <release id="102" status="Accepted">
+    <artists><artist><id>3</id><name>Single Artist</name></artist></artists>
+    <title>A Single</title>
+    <formats><format name="Vinyl" qty="1"><descriptions><description>12"</description><description>Single</description></descriptions></format></formats>
+    <genres><genre>Electronic</genre></genres><styles><style>House</style></styles>
+    <released>2001-01-01</released>
+    <master_id is_main_release="true">901</master_id>
+    <tracklist><track><position>A</position><title>X</title><duration>6:00</duration></track></tracklist>
+  </release>
+  <!-- 3: compilation album -->
+  <release id="103" status="Accepted">
+    <artists><artist><id>4</id><name>DJ Mixer</name></artist></artists>
+    <title>Compilation</title>
+    <formats><format name="CD" qty="1"><descriptions><description>Compilation</description><description>Album</description></descriptions></format></formats>
+    <genres><genre>Electronic</genre></genres><styles><style>House</style></styles>
+    <released>2002-01-01</released>
+    <master_id is_main_release="true">902</master_id>
+    <tracklist><track><position>1</position><title>X</title><duration>6:00</duration></track></tracklist>
+  </release>
+  <!-- 4: album with one missing duration -->
+  <release id="104" status="Accepted">
+    <artists><artist><id>5</id><name>Missing Time</name></artist></artists>
+    <title>Incomplete</title>
+    <formats><format name="CD" qty="1"><descriptions><description>Album</description></descriptions></format></formats>
+    <genres><genre>Rock</genre></genres><styles><style>Indie Rock</style></styles>
+    <released>2003-01-01</released>
+    <master_id is_main_release="true">903</master_id>
+    <tracklist>
+      <track><position>1</position><title>X</title><duration>3:00</duration></track>
+      <track><position>2</position><title>Y</title><duration></duration></track>
+    </tracklist>
+  </release>
+  <!-- 5: passes. Parent track has no duration but its sub_tracks do (a medley) -->
+  <release id="105" status="Accepted">
+    <artists><artist><id>6</id><name>Medley Band</name></artist></artists>
+    <title>Medley Album</title>
+    <formats><format name="CD" qty="1"><descriptions><description>Album</description></descriptions></format></formats>
+    <genres><genre>Rock</genre></genres><styles><style>Prog Rock</style></styles>
+    <country>UK</country>
+    <released>1975-06-00</released>
+    <master_id is_main_release="true">904</master_id>
+    <tracklist>
+      <track><position>1</position><title>Suite</title><duration></duration>
+        <sub_tracks>
+          <track><position>1.a</position><title>Part A</title><duration>3:10</duration></track>
+          <track><position>1.b</position><title>Part B</title><duration>4:13</duration></track>
+        </sub_tracks>
+      </track>
+    </tracklist>
+  </release>
+  <!-- 6: not the main release of its master -->
+  <release id="106" status="Accepted">
+    <artists><artist><id>7</id><name>Reissue Band</name></artist></artists>
+    <title>Reissue</title>
+    <formats><format name="CD" qty="1"><descriptions><description>Album</description></descriptions></format></formats>
+    <genres><genre>Rock</genre></genres><styles><style>Garage Rock</style></styles>
+    <released>2010-01-01</released>
+    <master_id is_main_release="false">905</master_id>
+    <tracklist><track><position>1</position><title>X</title><duration>3:00</duration></track></tracklist>
+  </release>
+  <!-- 7: album with no styles -->
+  <release id="107" status="Accepted">
+    <artists><artist><id>8</id><name>No Style Band</name></artist></artists>
+    <title>No Styles</title>
+    <formats><format name="CD" qty="1"><descriptions><description>Album</description></descriptions></format></formats>
+    <genres><genre>Rock</genre></genres>
+    <released>2004-01-01</released>
+    <master_id is_main_release="true">906</master_id>
+    <tracklist><track><position>1</position><title>X</title><duration>3:00</duration></track></tracklist>
+  </release>
+  <!-- 8: unparseable duration format -->
+  <release id="108" status="Accepted">
+    <artists><artist><id>10</id><name>Odd Format</name></artist></artists>
+    <title>Odd Durations</title>
+    <formats><format name="CD" qty="1"><descriptions><description>Album</description></descriptions></format></formats>
+    <genres><genre>Jazz</genre></genres><styles><style>Free Jazz</style></styles>
+    <released>1969-01-01</released>
+    <master_id is_main_release="true">907</master_id>
+    <tracklist><track><position>1</position><title>X</title><duration>4.45</duration></track></tracklist>
+  </release>
+</releases>

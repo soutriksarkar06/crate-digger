@@ -1,0 +1,17 @@
+# Raw dumps are huge and reproducible: never commit them.
+data/raw/*
+!data/raw/.gitkeep
+data/processed/
+# Python
+__pycache__/
+*.pyc
+.venv/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+*.egg-info/
+# Secrets: the LLM key lives in the environment only
+.env
+# Frontend (Phase 2)
+node_modules/
+dist/
